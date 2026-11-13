@@ -29,7 +29,7 @@ prefixRange(const std::vector<Movie>& v, const std::string& prefix){
 		const std::string& nm = v[i].name;
 		if(nm.size() < plen) break;
 		bool match = true;
-		for(std::size_t j = 0; i < plen; ++j){
+		for(std::size_t j = 0; j < plen; ++j){
 			if(nm[j] != prefix[j]){
 				match = false;
 				break;

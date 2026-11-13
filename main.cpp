@@ -115,7 +115,7 @@ int main(int argc, char** argv){
 	sort(scratch.begin(), scratch.end(), byRatingDescNameAsc);
 
 	for(const Movie& m : scratch){
-		cout << m.name << ", " << m.rating << "\n";
+		cout << m.name << ", " << fixed << setprecision(1) << m.rating << "\n";
 	}
 	cout << "\n";
 	best[p] = BestHit{scratch[0].name, scratch[0].rating, true};
